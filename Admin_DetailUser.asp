@@ -421,7 +421,7 @@ End If
                                 	<tr>
                                 		<td align="right" valign="top"><a href="javascript:history.back()" class="btn search">Trở Về</a></td>
                                 		<td align="left" valign="top"><% If rsAdmin.EOF And rsAdmin.BOF Then %>
-                                		    <input type="submit" id="btnXoa" name="btnXoa" value="Xóa" class="btn search"/>
+                                		    <input type="submit" id="btnXoa" name="btnXoa" value="Xóa" class="btn search" onclick="return confirm('Bạn có muốn xóa tài khoản này không')/>
                                 		    <% End If ' end rsAdmin.EOF And rsAdmin.BOF %></td>
                             		</tr>
                        				<tr>
